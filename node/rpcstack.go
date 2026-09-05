@@ -29,8 +29,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/Zano-Execution-Layer/go-ethereum/log"
+	"github.com/Zano-Execution-Layer/go-ethereum/rpc"
 	"github.com/rs/cors"
 )
 

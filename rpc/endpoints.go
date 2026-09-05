@@ -20,7 +20,7 @@ import (
 	"net"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/Zano-Execution-Layer/go-ethereum/log"
 )
 
 // StartIPCEndpoint starts an IPC endpoint.

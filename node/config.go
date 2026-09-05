@@ -25,12 +25,12 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/Zano-Execution-Layer/go-ethereum/common"
+	"github.com/Zano-Execution-Layer/go-ethereum/crypto"
+	"github.com/Zano-Execution-Layer/go-ethereum/log"
+	"github.com/Zano-Execution-Layer/go-ethereum/p2p"
+	"github.com/Zano-Execution-Layer/go-ethereum/p2p/enode"
+	"github.com/Zano-Execution-Layer/go-ethereum/rpc"
 )
 
 const (

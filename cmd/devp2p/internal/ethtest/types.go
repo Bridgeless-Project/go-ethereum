@@ -21,10 +21,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ethereum/go-ethereum/eth/protocols/eth"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/rlpx"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/Zano-Execution-Layer/go-ethereum/eth/protocols/eth"
+	"github.com/Zano-Execution-Layer/go-ethereum/p2p"
+	"github.com/Zano-Execution-Layer/go-ethereum/p2p/rlpx"
+	"github.com/Zano-Execution-Layer/go-ethereum/rlp"
 )
 
 type Message interface {

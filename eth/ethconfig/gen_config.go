@@ -6,13 +6,13 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/eth/gasprice"
-	"github.com/ethereum/go-ethereum/miner"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/Zano-Execution-Layer/go-ethereum/common"
+	"github.com/Zano-Execution-Layer/go-ethereum/consensus/ethash"
+	"github.com/Zano-Execution-Layer/go-ethereum/core"
+	"github.com/Zano-Execution-Layer/go-ethereum/eth/downloader"
+	"github.com/Zano-Execution-Layer/go-ethereum/eth/gasprice"
+	"github.com/Zano-Execution-Layer/go-ethereum/miner"
+	"github.com/Zano-Execution-Layer/go-ethereum/params"
 )
 
 // MarshalTOML marshals as TOML.

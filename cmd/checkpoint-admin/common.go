@@ -19,15 +19,15 @@ package main
 import (
 	"strconv"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/accounts/external"
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/contracts/checkpointoracle"
-	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/Zano-Execution-Layer/go-ethereum/accounts"
+	"github.com/Zano-Execution-Layer/go-ethereum/accounts/abi/bind"
+	"github.com/Zano-Execution-Layer/go-ethereum/accounts/external"
+	"github.com/Zano-Execution-Layer/go-ethereum/cmd/utils"
+	"github.com/Zano-Execution-Layer/go-ethereum/common"
+	"github.com/Zano-Execution-Layer/go-ethereum/contracts/checkpointoracle"
+	"github.com/Zano-Execution-Layer/go-ethereum/ethclient"
+	"github.com/Zano-Execution-Layer/go-ethereum/params"
+	"github.com/Zano-Execution-Layer/go-ethereum/rpc"
 	"github.com/urfave/cli/v2"
 )
 

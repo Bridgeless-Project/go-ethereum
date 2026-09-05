@@ -22,8 +22,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
+	"github.com/Zano-Execution-Layer/go-ethereum/log"
+	"github.com/Zano-Execution-Layer/go-ethereum/metrics"
 )
 
 const (

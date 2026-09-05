@@ -24,7 +24,7 @@ import (
 	"os"
 	"runtime/trace"
 
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/Zano-Execution-Layer/go-ethereum/log"
 )
 
 // StartGoTrace turns on tracing, writing to the given file.

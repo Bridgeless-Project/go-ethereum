@@ -23,7 +23,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/Zano-Execution-Layer/go-ethereum/log"
 )
 
 // makeWizard creates and returns a new puppeth wizard.

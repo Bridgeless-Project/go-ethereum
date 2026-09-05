@@ -12,6 +12,8 @@ package secp256k1
 #cgo CFLAGS: -I./libsecp256k1
 #cgo CFLAGS: -I./libsecp256k1/src/
 
+#include "zano_namespace.h"
+
 #ifdef __SIZEOF_INT128__
 #  define HAVE___INT128
 #  define USE_FIELD_5X52
@@ -31,8 +33,8 @@ package secp256k1
 #include "ext.h"
 
 typedef void (*callbackFunc) (const char* msg, void* data);
-extern void secp256k1GoPanicIllegal(const char* msg, void* data);
-extern void secp256k1GoPanicError(const char* msg, void* data);
+extern void zanoGethSecp256k1GoPanicIllegal(const char* msg, void* data);
+extern void zanoGethSecp256k1GoPanicError(const char* msg, void* data);
 */
 import "C"
 
@@ -47,8 +49,8 @@ var context *C.secp256k1_context
 func init() {
 	// around 20 ms on a modern CPU.
 	context = C.secp256k1_context_create_sign_verify()
-	C.secp256k1_context_set_illegal_callback(context, C.callbackFunc(C.secp256k1GoPanicIllegal), nil)
-	C.secp256k1_context_set_error_callback(context, C.callbackFunc(C.secp256k1GoPanicError), nil)
+	C.secp256k1_context_set_illegal_callback(context, C.callbackFunc(C.zanoGethSecp256k1GoPanicIllegal), nil)
+	C.secp256k1_context_set_error_callback(context, C.callbackFunc(C.zanoGethSecp256k1GoPanicError), nil)
 }
 
 var (
