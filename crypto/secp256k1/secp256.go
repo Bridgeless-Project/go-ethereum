@@ -32,6 +32,13 @@ package secp256k1
 #include "./libsecp256k1/src/modules/recovery/main_impl.h"
 #include "ext.h"
 
+// GCC rejects cgo's generated accessor for the const global
+// secp256k1_nonce_function_rfc6979 ("assignment of read-only variable"),
+// so read it through a plain function instead.
+static secp256k1_nonce_function zanoGethNonceFunctionRFC6979(void) {
+	return secp256k1_nonce_function_rfc6979;
+}
+
 typedef void (*callbackFunc) (const char* msg, void* data);
 extern void zanoGethSecp256k1GoPanicIllegal(const char* msg, void* data);
 extern void zanoGethSecp256k1GoPanicError(const char* msg, void* data);
@@ -83,7 +90,7 @@ func Sign(msg []byte, seckey []byte) ([]byte, error) {
 
 	var (
 		msgdata   = (*C.uchar)(unsafe.Pointer(&msg[0]))
-		noncefunc = C.secp256k1_nonce_function_rfc6979
+		noncefunc = C.zanoGethNonceFunctionRFC6979()
 		sigstruct C.secp256k1_ecdsa_recoverable_signature
 	)
 	if C.secp256k1_ecdsa_sign_recoverable(context, &sigstruct, msgdata, seckeydata, noncefunc, nil) == 0 {
