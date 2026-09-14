@@ -2,6 +2,7 @@
 #ifndef ZANO_GETH_SECP256K1_NAMESPACE_H
 #define ZANO_GETH_SECP256K1_NAMESPACE_H
 
+#define CURVE_B zano_geth_CURVE_B
 #define secp256k1_context zano_geth_secp256k1_context
 #define secp256k1_context_clone zano_geth_secp256k1_context_clone
 #define secp256k1_context_create zano_geth_secp256k1_context_create
